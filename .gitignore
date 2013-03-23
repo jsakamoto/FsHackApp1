@@ -8,3 +8,6 @@ obj
 /packages
 
 Thumbs.db
+
+/FsHackApp1/FsHackApp1Web/App_Data/FsMvcAppExample.mdf
+/FsHackApp1/FsHackApp1Web/App_Data/FsMvcAppExample_log.ldf
