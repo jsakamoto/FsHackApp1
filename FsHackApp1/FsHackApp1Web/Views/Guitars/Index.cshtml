@@ -1,0 +1,32 @@
+﻿@model IEnumerable<FsWeb.Models.Guitar>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="~/Content/jquery.mobile-1.0.1.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div data-role="page" data-theme="a" id="guitarsPage">
+        <div data-role="header">
+            <h1>Guitars</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-filter="true" data-inset="true">
+                @foreach (var x in Model)
+                {
+                    <li><a href="#">@x.Name</a></li>
+                }
+            </ul>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.6.4.js"></script>
+    <script src="~/Scripts/jquery.mobile-1.0.1.js"></script>
+    <script>
+        $(document).delegate("#guitarsPage", "pageshow", function (event) {
+            $("div:jqmData(role='content')>ul").listview('refresh');
+        });
+    </script>
+</body>
+</html>
