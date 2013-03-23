@@ -58,6 +58,7 @@
     <Compile Include="FsMvcAppEntities.fs" />
     <Compile Include="GuitarsRepository.fs" />
     <Compile Include="HomeController.fs" />
+    <Compile Include="Repository.fs" />
     <Compile Include="GuitarsController.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets" Condition="Exists('$(MSBuildExtensionsPath32)\..\Microsoft SDKs\F#\3.0\Framework\v4.0\Microsoft.FSharp.Targets')" />
