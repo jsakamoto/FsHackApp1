@@ -7,6 +7,6 @@ open FsWeb.Models
 type GuitarsController() =
     inherit Controller()
     member this.Index() =
-        seq { yield {Id=System.Guid.NewGuid(); Name="Gibson Les Paul"} 
-              yield {Id=System.Guid.NewGuid(); Name="Martin D-28"} }
+        seq { yield Guitar(Name="Gibson Les Paul")
+              yield Guitar(Name="Martin D-28") }
         |> this.View
