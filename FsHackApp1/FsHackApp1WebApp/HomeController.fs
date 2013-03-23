@@ -6,5 +6,5 @@ open System.Web.Mvc
 [<HandleError>]
 type HomeController() =
     inherit Controller()
-    member this.Index () =
-        this.View() :> ActionResult
+    member this.Index () : ActionResult =
+        upcast this.View()
