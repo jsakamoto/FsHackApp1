@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FsHackApp1Web", "FsHackApp1\FsHackApp1Web\FsHackApp1Web.csproj", "{DB26B10F-B4D9-4CA0-A583-212892830479}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FsHackApp1WebApp", "FsHackApp1\FsHackApp1WebApp\FsHackApp1WebApp.fsproj", "{A126575F-C66E-42BF-A70F-655D4C3F0069}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{85D9F037-37BE-4EA3-88E9-A3EEB235FF1E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB26B10F-B4D9-4CA0-A583-212892830479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB26B10F-B4D9-4CA0-A583-212892830479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB26B10F-B4D9-4CA0-A583-212892830479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB26B10F-B4D9-4CA0-A583-212892830479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A126575F-C66E-42BF-A70F-655D4C3F0069}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
