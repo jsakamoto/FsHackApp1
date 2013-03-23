@@ -2,11 +2,14 @@
 
 open System.Web.Mvc
 open FsWeb.Models
+open FsWeb.Repositories
 
 [<HandleError>]
-type GuitarsController() =
+type GuitarsController(repository : GuitarsRepository) =
     inherit Controller()
+
+    new() = new GuitarsController(GuitarsRepository())
+
     member this.Index() =
-        seq { yield Guitar(Name="Gibson Les Paul")
-              yield Guitar(Name="Martin D-28") }
+        repository.GetAll()
         |> this.View

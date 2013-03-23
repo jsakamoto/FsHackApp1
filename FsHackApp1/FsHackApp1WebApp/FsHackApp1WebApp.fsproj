@@ -55,6 +55,8 @@
     <None Include="App.config" />
     <Compile Include="Global.fs" />
     <Compile Include="Guitar.fs" />
+    <Compile Include="FsMvcAppEntities.fs" />
+    <Compile Include="GuitarsRepository.fs" />
     <Compile Include="HomeController.fs" />
     <Compile Include="GuitrsController.fs" />
   </ItemGroup>
